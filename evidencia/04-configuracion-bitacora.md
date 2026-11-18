@@ -1,6 +1,6 @@
 # Evidencia 04 — Configuración de la bitácora
 
-**Estudiante:** [REEMPLAZA: tu nombre]
+**Estudiante:** Luis Alejandro Navarrete Diaz
 **Actividad:** 4
 
 ## Comando ejecutado
