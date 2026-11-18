@@ -1,6 +1,7 @@
 # Evidencia 13 — Manipulación de la auditoría
 
-**Estudiante:** [REEMPLAZA: tu nombre]
+**Estudiante:** Luis Alejandro Navarrete Diaz
+
 **Actividad:** 14
 
 ## Comando ejecutado
