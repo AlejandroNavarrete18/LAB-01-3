@@ -34,3 +34,8 @@ SELECT tgname, tgenabled, tgrelid::regclass FROM pg_trigger WHERE NOT tgisintern
 
 -- Pregunta 3: ¿quedó registrada la creación en la bitácora?
 SELECT num, linea FROM dba.bitacora WHERE linea ~ 'statement: (CREATE|REVOKE)' ORDER BY num;
+
+
+
+
+
