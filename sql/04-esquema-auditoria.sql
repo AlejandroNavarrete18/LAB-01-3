@@ -13,3 +13,4 @@ CREATE TABLE auditoria.cambios_clientes ( id_evento BIGSERIAL PRIMARY KEY,
  valores_antes JSONB,
  valores_despues JSONB
 );
+
