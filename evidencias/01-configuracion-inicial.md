@@ -77,3 +77,4 @@ Con `trust` el servidor acepta cualquier conexión sin verificar contraseña. La
 **4. ¿Zona horaria y por qué importa?** `log_timezone` = America/Chihuahua/configuration file. Importa porque para reconstruir una cronología hay que comparar la bitácora con otras fuentes (tabla de auditoría, reportes, otros sistemas). Si no se sabe en qué zona está cada marca de tiempo, los eventos se desfasan y el orden de los hechos puede quedar mal.
 
 **5. Con `logging_collector = off`, ¿quién decide dónde termina la bitácora?** El mecanismo con que se desplegó el servidor (script de arranque, servicio de Homebrew, contenedor), no PostgreSQL. PostgreSQL solo escribe en stderr.
+En mi servidor logging_collector ya estaba en on, así que el destino lo decide PostgreSQL (log_directory).
