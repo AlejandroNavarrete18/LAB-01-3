@@ -33,7 +33,7 @@ CREATE ROLE soporte_ana LOGIN;
 --\password app_ventas
 --\password soporte_ana
 
---Usa Ventas_Practica_2026 y Soporte_Practica_2026, respectivamente. Otorga los privilegios del escenario:
+-- Usa <REDACTED> como contraseña de cada rol (los valores están en la guía). Otorga los privilegios del escenario:
 GRANT SELECT, UPDATE ON clientes TO app_ventas;
 GRANT SELECT ON clientes TO soporte_ana;
 

@@ -21,7 +21,7 @@ WHERE linea ILIKE '%update%' OR linea LIKE '%app_ventas%';
 ## Resultado obtenido
 ```powershell
 PS C:\Users\alexd> $env:Path += ";C:\Program Files\PostgreSQL\18\bin"
-PS C:\Users\alexd> psql "postgresql://app_ventas:Ventas_Practica_2026@127.0.0.1/comercial?application_name=app-ventas-web" -c "UPDATE clientes SET rfc = 'GAMA780912XXX' WHERE id = 3"
+PS C:\Users\alexd> psql "postgresql://app_ventas:<REDACTED>@127.0.0.1/comercial?application_name=app-ventas-web" -c "UPDATE clientes SET rfc = 'GAMA780912XXX' WHERE id = 3"
 UPDATE 1
 ```log
 2026-11-17 18:05:28 CST SENTENCIA:  \password app_ventas

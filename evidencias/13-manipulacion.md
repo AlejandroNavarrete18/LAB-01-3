@@ -30,7 +30,7 @@ ORDER BY num;
 **Errores de app_ventas:**
 
 ```powershell
-PS C:\Users\alexd> psql "postgresql://app_ventas:Ventas_Practica_2026@127.0.0.1/comercial?application_name=appventas-web" -c "DELETE FROM auditoria.cambios_clientes" -c "ALTER TABLE clientes DISABLE
+psql "postgresql://app_ventas:<REDACTED>@127.0.0.1/comercial?application_name=app-ventas-web" -c "DELETE FROM auditoria.cambios_clientes" -c "ALTER TABLE clientes DISABLE TRIGGER trg_auditoria_clientes"
 >> TRIGGER trg_auditoria_clientes"
 ERROR:  permission denied for schema auditoria
 LÍNEA 1: DELETE FROM auditoria.cambios_clientes
@@ -52,7 +52,7 @@ ERROR:  must be owner of table clientes
 | 380 | `2026-11-18 16:35:07.084 CST [24228] user=postgres db=comercial app=pgAdmin 4 - CONN:5123666 client=::1 LOG:  statement: UPDATE clientes SET rfc = 'GAMA780912GHI' WHERE id = 3;` |
 | 381 | `2026-11-18 16:35:09.103 CST [24228] user=postgres db=comercial app=pgAdmin 4 - CONN:5123666 client=::1 LOG:  statement: ALTER TABLE clientes ENABLE TRIGGER trg_auditoria_clientes;` |
 
-[REEMPLAZA: pega tu resultado]
+
 
 ## Interpretación
 

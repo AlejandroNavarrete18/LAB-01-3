@@ -41,7 +41,7 @@ falló la conexión al servidor en «127.0.0.1», puerto 5432: FATAL:  password 
 PS C:\Users\alexd> psql "postgresql://usuario_inexistente:x@127.0.0.1/comercial" -c "SELECT 1"
 psql: error: falló la conexión al servidor en «127.0.0.1», puerto 5432: FATAL:  password authentication failed for user "usuario_inexistente"
 falló la conexión al servidor en «127.0.0.1», puerto 5432: FATAL:  password authentication failed for user "usuario_inexistente"
-PS C:\Users\alexd> psql "postgresql://app_ventas:Ventas_Practica_2026@127.0.0.1/comercial?application_name=app-ventas-web" -c "SELECT count(*) FROM clientes"
+PS C:\Users\alexd> psql "postgresql://app_ventas:<REDACTED>@127.0.0.1/comercial?application_name=app-ventas-web" -c "SELECT count(*) FROM clientes"
  count
 -------
      5

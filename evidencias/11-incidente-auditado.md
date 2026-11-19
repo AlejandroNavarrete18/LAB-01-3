@@ -70,10 +70,10 @@ ORDER BY a.id_evento;
 **Salida de los dos psql de app_ventas (UPDATE y SELECT sobre auditoría):**
 
 ```powershell
-PS C:\Users\alexd> psql "postgresql://app_ventas:Ventas_Practica_2026@127.0.0.1/comercial?application_name=app-ventas-web" -c "UPDATE clientes SET rfc = 'GAMA780912ZZZ' WHERE id = 3"
+PS C:\Users\alexd> psql "postgresql://app_ventas:<REDACTED>@127.0.0.1/comercial?application_name=app-ventas-web" -c "UPDATE clientes SET rfc = 'GAMA780912ZZZ' WHERE id = 3"
 UPDATE 1
 
-PS C:\Users\alexd> psql "postgresql://app_ventas:Ventas_Practica_2026@127.0.0.1/comercial" -c "SELECT * FROM auditoria.cambios_clientes"
+PS C:\Users\alexd> psql "postgresql://app_ventas:<REDACTED>@127.0.0.1/comercial" -c "SELECT * FROM auditoria.cambios_clientes"
 ERROR:  permission denied for schema auditoria
 LÍNEA 1: SELECT * FROM auditoria.cambios_clientes
 

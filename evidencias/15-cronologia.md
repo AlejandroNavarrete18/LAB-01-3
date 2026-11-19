@@ -1,6 +1,6 @@
 # Evidencia 15 — Cronología y respuestas a Dirección
 
-**Estudiante:** [REEMPLAZA: tu nombre]
+**Estudiante:** Luis Alejandro Navarrete Diaz
 **Actividad:** 17
 
 ## Comando ejecutado
