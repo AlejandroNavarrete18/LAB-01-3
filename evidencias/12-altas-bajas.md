@@ -31,7 +31,7 @@ FROM auditoria.cambios_clientes ORDER BY id_evento;
 En `auditoria.cambios_clientes`: el INSERT conserva sus datos en `valores_despues` y el DELETE conserva el registro completo en `valores_antes`. Las sentencias también quedan en la bitácora con `log_statement = 'mod'`.
 
 **2. ¿Por qué `ip_cliente` está vacía en los eventos 2 y 3?**
-Porque el administrador se conectó por socket Unix local, no por TCP, y `inet_client_addr()` devuelve NULL en ese caso.
+En mi servidor no estuvo vacía: salió `::1` (loopback IPv6), porque pgAdmin se conecta por TCP. En la guía queda vacía porque el administrador usa un socket Unix local, donde `inet_client_addr()` devuelve NULL.
 
 **3. La política de retención de la Unidad II pedía eliminar datos cuando ya no fueran necesarios. ¿Qué conflicto aparece? ¿Quién debe resolverlo?**
 La tabla de auditoría conserva los datos personales (por ejemplo el RFC) de un cliente que ya fue eliminado de `clientes`. Eso choca con la política de eliminar datos que ya no son necesarios. Debe resolverlo quien define la política de retención y gobierno del dato (responsable del dato junto con seguridad y cumplimiento), no el DBA por su cuenta. El criterio formal se completa en el LAB-03.
